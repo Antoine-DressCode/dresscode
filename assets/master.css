@@ -1,0 +1,84 @@
+/* Fichier Master CSS DressCode par Antoine BEAUDESSON */
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+/* Import de CSS dans le master*/
+@import "css/layout.css";
+@import "css/responsive.css";
+@import "css/animated.css";
+@import "css/form.css";
+@import "css/footer.css";
+@import "css/mentions.css";
+
+/* CSS Variables pour toutes les couleurs et les polices. */
+:root{
+  --height : 3rem;
+
+  /* Colors (3 couleurs : 1 dominante 60%, 1 complémentaire 30% et 1 accent 10%)*/
+  --dominant-color: #e2e2e2;
+  --complement-color: #e1dbd6;
+  --accent-color: #000000;
+  --grey-color: #dad7cd;
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+
+  /* Font and typos */
+  --body-font: 'Poppins', sans-serif;
+  --title-font: 'Playfair Display', serif;
+  --big-font-size: 6.5rem;
+  --big-font-size-responsive: 3.5rem;
+  --medium-font-size: 1.3rem;
+  --medium-font-size-responsive: 1rem;
+  --normal-font-size: .938rem;
+  --logo-font-size: 1.5rem;
+  --logo-font-weight: 800;
+
+  /* z-index:  */
+  --z-fixed: 100;
+  --z-index-animated-background: 150;
+}
+
+/* Base du CSS de DressCode */
+*,::before, ::after{
+  box-sizing: border-box;
+}
+
+body {
+  margin: var(--height) 0 0 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+
+h1,h2,h3,p,ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

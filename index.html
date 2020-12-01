@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- Ce site web a été par Antoine BEAUDESSON pour les besoins du projet DressCode.
+PS: Je ne suis pas dev donc c'est normal si c'est full buggé ou si la synthaxe est ignoble. J'ai fais du mieux que j'ai pu.   -->
+
+<html lang="fr-FR" style="height: auto; overflow: auto;">
+<!-- HTML HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS MASTER -->
+    <link rel="stylesheet" href="assets/master.css">
+    <!-- Boxicons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <!-- Favicon une fois qu'on l'aura. -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Passage relatif au référencement avec meta title et meta description -->
+    <title>DressCode - L'application qui gère votre dressing</title>
+    <meta name="author" content="Antoine BEAUDESSON">
+    <meta name="description" content="DressCode a pour ambition de gérer votre dressing et vous aider à vous sentir bien dans vos vêtements pour être heureux.">
+    <meta name="tags" content="Dresscode">
+    <meta name="keywords" content="application, startup, mode, vêtements, transparence, nouveau projet">
+    <!-- Meta Données pour Facebook et les réseaux sociaux.-->
+    <meta property="og:image" content="">
+    <meta property="twitter:" content="">
+  </head>
+
+<!-- HTML BODY -->
+  <body>
+    <!-- HEADER (Responsive Ok)-->
+      <header class="header">
+          <nav class="nav bd-grid">
+              <div>
+                  <a href="#" class="nav__logo">DressCode</a>
+              </div>
+
+              <div class="nav__toggle" id="nav-toggle">
+                  <i class='bx bx-menu-alt-right'></i>
+              </div>
+
+              <div class="nav__menu" id="nav-menu">
+                  <div class="nav__close" id="nav-close">
+                      <i class='bx bx-x'></i>
+                  </div>
+
+                  <ul class="nav__list">
+                      <li class="nav__item"><a href="#home" class="nav__link active">Accueil</a></li>
+                      <li class="nav__item"><a href="#about" class="nav__link">Notre Mission</a></li>
+                      <li class="nav__item"><a href="#how" class="nav__link">Comment ?</a></li>
+                      <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                  </ul>
+              </div>
+          </nav>
+      </header>
+
+      <!-- MAIN BODY -->
+      <main class="l-main">
+
+        <!-- First Section Home -->
+        <section class="home" id="home">
+
+          <div class="home__container bd-grid">
+            <!-- Right Part -->
+            <div class="home__img">
+              <img src="img/phone_left.png" alt="" data-speed="-2" class="move">
+              <img src="img/phone_right.png" alt="" data-speed="2" class="move">
+              <p class="warning" id="app">L'application n'étant pas encore développée, les visuels ne sont pas représentatifs de ce que nous voulons créer. </p>
+            </div>
+
+            <!-- Left Part -->
+            <div class="home__data">
+              <h1 class="home__title">Save Time<br>improve <br>your style</h1>
+              <h2 class="home__description">La solution simple et rapide pour un style parfait</h2>
+              <button type="button" name="S'inscrire"></button>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Second Section About -->
+        <section class="mission" id="about">
+
+          <!-- Encadré Mission Texte + Image -->
+            <div class="mission__box">
+              <div class="mission__container">
+                <div class="img-wrapper-mission">
+                  <div class="mission__img">
+                    <img src="img/mission.jpg" alt="notre mission chez dresscode">
+                  </div>
+                </div>
+                <div class="mission__data">
+                  <div class="text-wrapper-mission-1">
+                  <h2 class="mission__title">Notre<br>Mission</h2>
+                  </div>
+                  <div class="text-wrapper-mission-2">
+                  <p class="mission_text">Qui ne perd jamais de temps à trouver comment s'habiller ? La météo, le programme du jour et les tendances sont autant de critères à prendre en compte pour notre look.<br><br><br>Pour tous ces indécis, nous avons la solution ! Simple et rapide, Dresscode vous permet de générer en un rien de temps des looks à partir de votre dressing, et de shopper des pièces suggérées en fonction de votre garde-robe.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+
+        <!-- Third section How -->
+        <section class="how" id="how">
+
+          <div class="how__container bd-grid">
+            <h2 class="mission__how">Ne perdez plus <br>votre temps</h2>
+
+              <ul class="img-wrapper">
+                <li class="li__inline">
+                  <div class="text-wrapper">
+                    <img class="icons" src="img/scanner.png" alt="icon_scanner">
+                  </div>
+                  <div class="text-wrapper">
+                    <div class="content-wrapper"><em>Votre dressing dans votre téléphone</em> <br><br> Vivez une expérience 100% mobile ! Scannez vos vêtements, changez de tenue en un geste et profitez-en pour découvrir ou redécouvrir votre dressing.</div>
+                  </div>
+                </li>
+                <li class="li__inline">
+                  <div class="text-wrapper">
+                    <img class="icons" src="img/time.png" alt="icon_time">
+                  </div>
+                  <div class="text-wrapper">
+                    <div class="content-wrapper"><em>Votre dressing dans votre téléphone</em> <br><br> Vivez une expérience 100% mobile ! Scannez vos vêtements, changez de tenue en un geste et profitez-en pour découvrir ou redécouvrir votre dressing.
+                    </div>
+                  </div>
+                </li>
+                <li class="li__inline">
+                  <div class="text-wrapper">
+                    <img class="icons" src="img/mannequin.png" alt="icon_mannequin">
+                  </div>
+                    <div class="text-wrapper">
+                  <div class="content-wrapper"><em>Votre dressing dans votre téléphone</em> <br><br> Vivez une expérience 100% mobile ! Scannez vos vêtements, changez de tenue en un geste et profitez-en pour découvrir ou redécouvrir votre dressing.
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+            <!-- <div class="text-wrapper">
+              <div class="content-wrapper"><em>Votre dressing dans votre téléphone</em> <br><br> Vivez une expérience 100% mobile ! Scannez vos vêtements, changez de tenue en un geste et profitez-en pour découvrir ou redécouvrir votre dressing.</div>
+              <div class="content-wrapper"><em>S'habiller en moins de 5 min</em><br><br>Programmée la veille ou 5 minutes avant de partir, l'application vous propose instantanément des tenues complètes, adaptées à toutes les situations.</div>
+              <div class="content-wrapper"><em>L'excellence de vos vêtements</em><br><br>Dresscode s'appuie sur des principes de base pour faire ressortir le meilleur de votre style et de vos goûts.
+              </div>
+            </div> -->
+          </div>
+
+        </section>
+
+        <!-- Fourth section contact -->
+        <section class="contact" id="contact">
+
+          <div class="contact1">
+            <div class="container-contact1">
+              <!-- <div class="contact1-pic" data-tilt>
+                <img src="img/img-01.png" alt="IMG">
+              </div> -->
+
+              <form class="contact1-form validate-form">
+                <span class="contact1-form-title">
+                  Aidez-nous à faire de ce rêve une réalité.
+                </span>
+
+                <div class="wrap-input1 validate-input" data-validate = "Name is required">
+                  <input class="input1" type="text" name="Prénom" placeholder="Prénom">
+                  <span class="shadow-input1"></span>
+                </div>
+
+                <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                  <input class="input1" type="text" name="email" placeholder="Email">
+                  <span class="shadow-input1"></span>
+                </div>
+
+                <div class="wrap-input1 validate-input" required>
+                  <input type="checkbox" name="optin">
+                  <label class="optin" for="optin">En cliquant, vous déclarez avoir lu et accepter les <a class="optin" href="mentions-legales.html">mentions légales<a></label>
+                  <span class="shadow-input1"></span>
+                </div>
+
+
+                <!-- <div class="wrap-input1 validate-input" data-validate = "Optin is required">
+                  <input class="input1" type="checkbox" name="En validant" required></textarea>
+                  <span class="shadow-input1"></span>
+                </div> -->
+
+                <div class="container-contact1-form-btn">
+                  <button class="contact1-form-btn">
+                    <span>
+                      S'inscrire
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer-distributed">
+        			<div class="footer-right">
+        				<a href="https://www.facebook.com/dresscode.apps"><i class='bx bxl-facebook-circle'></i></a>
+        				<a href="https://www.instagram.com/dresscode.apps/"><i class='bx bxl-instagram-alt'></i></a>
+        			</div>
+        			<div class="footer-left">
+        				<p class="footer-links">
+        					<a class="link-1" href="#">Mentions Légales</a>
+        				</p>
+        				<p>DressCode &copy; 2020</p>
+        			</div>
+      	</footer>
+
+      </main>
+
+    <!-- Les Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="assets/js/form-1.js"></script>
+    	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    	<script src="vendor/bootstrap/js/popper.js"></script>
+    	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    	<script src="vendor/select2/select2.min.js"></script>
+    	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+  </body>
+</html>

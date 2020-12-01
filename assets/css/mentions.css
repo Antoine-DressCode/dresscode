@@ -1,0 +1,28 @@
+/* Fichier Mentiosn légales CSS DressCode par Antoine BEAUDESSON */
+
+.mentions__data{
+  max-width: 100%;
+  display: block;
+}
+
+.mentions__title{
+    font-size: var(--big-font-size);
+    color: var(--first-color);
+    margin-bottom: 30px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.mentions_h2 {
+  font-size: var(--medium-font-size);
+  color: var(--dominant-color);
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+.mentions_text {
+  color: var(--black-color);
+  line-height: 1.5;
+  text-align: justify;
+  font-size: var(--normal-font-size);
+}

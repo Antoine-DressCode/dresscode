@@ -1,0 +1,226 @@
+/* CSS pour le layout de la page d'accueil de DressCode */
+
+/* Base du Layout pour la page */
+.bd-grid{
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* ============  Header  ================ */
+/* CSS du Header */
+.header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--white-color)
+}
+
+/* Nav du Header */
+.nav {
+  height: var(--height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo{
+  color: var(--black-color);
+  font-size: var(--logo-font-size);
+  font-weight: var(--logo-font-weight);
+}
+
+.nav__close{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav__item{
+  margin-bottom: 2rem;
+}
+
+.nav__close, .nav__link, .nav__logo, .nav__toggle{
+  color: var(--Black-color);
+}
+
+.nav__link:hover{
+  color: var(--complement-color);
+}
+
+.nav__toggle{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ==============  Home  ============== */
+/* CSS de la section Home */
+
+/* Container et Layout */
+.home{
+  background-color: var(--dominant-color);
+  overflow: hidden;
+}
+
+.home__container{
+  height: calc(81vh - var(--headerheight));
+  grid-template-rows: repeat(2,1fr);
+  row-gap: 1.5rem;
+  margin-bottom: 70px;
+}
+
+/* Titres et textes */
+.home__title{
+  color: var(--black-color);
+  font-size: var(--big-font-size);
+  font-family: var(--title-font);
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.home__description{
+  margin-bottom: 2.5rem;
+  color: var(--black-color);
+  font-size: var(--medium-font-size);
+  font-weight: 100;
+}
+
+
+/* Images */
+.home__img{
+  position: relative;
+  padding-top: 1.5rem;
+  width: 302px;
+  height: 302px;
+}
+
+.home__img img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.warning{
+  color: var(--black-color);
+  font-size: 8px;
+  text-align: center;
+  margin-top: 600px;
+}
+
+
+/* ============  Mission  ========== */
+/* CSS de la section Mission */
+
+.mission {
+  background-color: var(--white-color);
+  background-image: url(img/animated-bg.png);
+  position: relative;
+  z-index: 1;
+  height: 1020px;
+  margin-left: 0;
+  margin-top: 115px;
+}
+
+.mission__box {
+  position: absolute;
+  z-index: 3;
+  background: var(--white-color);
+  width: 60%;
+  left: 20%;
+  top: 250px;
+}
+
+.mission__container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap:  3rem;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.mission__data{
+  max-width: 100%;
+  display: block;
+}
+
+.mission__title{
+  font-size: var(--big-font-size);
+  font-family: var(--title-font);
+  color: var(--first-color);
+  margin-bottom: 30px;
+}
+
+.mission__img{
+  max-width: 100%;
+}
+
+/* ===========  HOW  =========== */
+/* CSS de la section How */
+
+.how {
+  background: var(--background-color);
+  padding-top: 50px;
+}
+
+.mission__how{
+  font-size: var(--big-font-size);
+  color: var(--first-color);
+  font-family: var(--title-font);
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.how__container{
+  height: calc(80vh - var(--headerheight));
+  grid-template-rows: repeat(2,max-content);
+  row-gap: 1.5rem;
+}
+
+/* CSS du Schnaps */
+.li__inline{
+  display: inline;
+  align-items: center;
+}
+
+.icons {
+  max-width: 125px;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 180px;
+  grid-auto-rows: 100%;
+  max-width: 1400px;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+
+.text-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 180px;
+  grid-auto-rows: 100%;
+  max-width: 1400px;
+  margin-bottom: 20px;
+}
+
+.content-wrapper {
+  text-align: center;
+}
